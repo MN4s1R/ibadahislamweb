@@ -1,9 +1,3 @@
-/* ===========================================================
-   PANDUAN IBADAH ISLAM — Design tokens
-   Palette: deep masjid green, warm gold, cream parchment
-   Type: Amiri (display) + Noto Sans (body, full Malay diacritic support)
-=========================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@400;500;600;700&display=swap');
 
 :root{
