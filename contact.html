@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hubungi Kami — Panduan Ibadah Islam</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="mark">☾</span> IBADAH ISLAM</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Utama</a></li>
+      <li><a href="akikah.html">Akikah</a></li>
+      <li><a href="korban.html">Korban</a></li>
+      <li><a href="sembelihan.html">Sembelihan</a></li>
+      <li><a href="about.html">Info</a></li>
+      <li><a href="contact.html" class="active">Hubungi</a></li>
+    </ul>
+    <div class="nav-tools">
+      <div class="search-wrap" id="searchWrap">
+        <input type="text" class="search-input" id="searchInput" placeholder="Cari topik...">
+        <div class="search-results" id="searchResults"></div>
+      </div>
+      <button class="icon-btn" id="searchToggle" aria-label="Cari">🔍</button>
+      <button class="icon-btn" id="themeToggle" aria-label="Tukar tema">🌙</button>
+      <a href="contact.html" class="nav-cta">Hubungi Kami</a>
+    </div>
+  </div>
+</header>
+
+<div class="topic-hero tone-gold">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Utama</a> &nbsp;›&nbsp; Hubungi Kami</div>
+    <div class="topic-hero-inner">
+      <div class="mark">✉️</div>
+      <div>
+        <h1>Hubungi Kami</h1>
+        <p class="sub">Ada soalan atau cadangan? Kami akan cuba jawab secepat mungkin.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container page-body">
+  <div class="contact-grid">
+    <div>
+      <form id="contactForm">
+        <div class="form-field">
+          <label for="name">Nama</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Emel</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-field">
+          <label for="message">Mesej</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Hantar Mesej</button>
+        <p class="form-note" id="formNote">Nota: laman ini tiada backend, jadi borang ini perlu disambungkan ke perkhidmatan seperti Formspree atau Google Forms supaya mesej benar-benar dihantar.</p>
+      </form>
+    </div>
+
+    <div>
+      <ul class="contact-info">
+        <li><span class="icon-btn">✉</span> <div><strong>Emel</strong><br>info@ibadahislam.my</div></li>
+        <li><span class="icon-btn">📍</span> <div><strong>Lokasi</strong><br>Malaysia</div></li>
+        <li><span class="icon-btn">⏰</span> <div><strong>Waktu Balasan</strong><br>1–2 hari bekerja</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="mark">☾</span> IBADAH ISLAM</div>
+        <p>Panduan lengkap tentang Akikah, Korban dan Sembelihan dalam Islam.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Peta Laman</h4>
+        <ul>
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="akikah.html">Akikah</a></li>
+          <li><a href="korban.html">Korban</a></li>
+          <li><a href="sembelihan.html">Sembelihan</a></li>
+          <li><a href="about.html">Info Lain</a></li>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Maklumat</h4>
+        <ul>
+          <li><a href="akikah.html#t1">Panduan Syariat</a></li>
+          <li><a href="akikah.html#t3">Syarat Sah</a></li>
+          <li><a href="akikah.html#t4">Sunat</a></li>
+          <li><a href="akikah.html#t6">Hikmah</a></li>
+          <li><a href="akikah.html#t5">Pembahagian</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li><a href="mailto:info@ibadahislam.my">✉ info@ibadahislam.my</a></li>
+          <li><a href="contact.html">📍 Malaysia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ibadah Islam. Hak Cipta Terpelihara.</span>
+      <a href="#" class="back-top" aria-label="Kembali ke atas">↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/search.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formNote').textContent = 'Borang ini belum disambungkan ke sebarang perkhidmatan emel — lihat nota di bawah untuk langkah seterusnya.';
+  });
+</script>
+</body>
+</html>
