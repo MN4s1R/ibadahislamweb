@@ -1,0 +1,39 @@
+/* ===========================================================
+   RESPONSIVE.CSS — fine-tuning beyond the base breakpoints
+   already handled in style.css. Kept separate so layout rules
+   live with components, and viewport tuning lives here.
+=========================================================== */
+
+/* Tablet: tighten hero + section padding */
+@media(max-width:1024px){
+  .hero{padding:56px 0 76px;}
+  .hero h1{font-size:2.2rem;}
+  .section{padding:56px 0;}
+}
+
+/* Small phones: shrink type scale, stack contact grid, full-width search */
+@media(max-width:480px){
+  .hero h1{font-size:1.8rem;}
+  .hero p{font-size:.95rem;}
+  .brand{font-size:.95rem;}
+  .topic-hero h1{font-size:1.35rem;}
+  .panel{padding:20px 18px;}
+  .split-row{gap:12px;}
+  .split{min-width:100px;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+  .search-wrap.open .search-input{width:100%;position:fixed;left:16px;right:16px;top:64px;}
+  .search-results{position:fixed;left:16px;right:16px;top:108px;width:auto;}
+}
+
+/* Print: no header/footer chrome, just content */
+@media print{
+  .site-header,.site-footer,.nav-tools,.search-wrap{display:none !important;}
+  body{background:#fff;color:#000;}
+  .panel{border:1px solid #ccc;box-shadow:none;}
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;}
+}
